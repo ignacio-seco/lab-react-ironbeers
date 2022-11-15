@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './ListBeer.css'
 
 function ListBeer({beers}){
-
     const renderBeers = beers.map((e)=>{return<div className="BeerCard" key={e._id}>
     <div className="imageHolder">
     <Link to={`./${e._id}`}>
