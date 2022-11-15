@@ -6,6 +6,10 @@ import NewBeerPic from "../../assets/new-beer.png";
 import { Link } from "react-router-dom";
 import "./HomePage.css";
 function HomePage({ setShow }) {
+  const hideNavBar = () => {
+    return setShow(false)
+  }
+  hideNavBar()
   return (
     <Container className="homePageLinks">
       <Link to="/beers">

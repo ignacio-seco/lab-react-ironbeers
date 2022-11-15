@@ -12,7 +12,7 @@ import BeerDetails from './components/BeerDetails/BeerDetails';
 
 function App() {
   const apiData = "https://ih-beers-api2.herokuapp.com/beers"
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(true)
   const [beers,setBeers] = useState([])
   useEffect(()=>{
     console.log("useEffect - Initial render (Mounting)");
@@ -34,7 +34,7 @@ function App() {
     <Route path="/beers" element={<ListBeer  beers={beers} />}/>
     <Route path="/beers/:_id" element={<BeerDetails  beers={beers} />}/>
     <Route path="/random-beer" element={<RandomBeer  beers={beers} />}/>
-    <Route path="/new-beer" element={<NewBeer />}/>
+    <Route path="/new-beer" element={<NewBeer setShow={setShow} apiData={apiData}/>}/>
 
     </Routes>
 
