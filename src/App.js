@@ -32,7 +32,7 @@ function App() {
     <Routes>
     <Route path="/" element={<HomePage setShow={setShow} />}/>
     <Route path="/beers" element={<ListBeer beers={beers} />}/>
-    <Route path="/beers/:id" element={<BeerDetails beers={beers} />}/>
+    <Route path="/beers/:name" element={<BeerDetails beers={beers} />}/>
     <Route path="/random-beer" element={<RandomBeer beers={beers} />}/>
     <Route path="/new-beer" element={<NewBeer/>}/>
 

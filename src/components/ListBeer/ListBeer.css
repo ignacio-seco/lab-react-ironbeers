@@ -12,7 +12,7 @@
 
 }
 
-.imageHolder img{
+.imageHolder a img{
     height: 100px;
 }
 .BoldStyle{
